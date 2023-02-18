@@ -23,7 +23,8 @@ function delivery_route_optimization(buildings, start) {
     points[build.name] = build.distance;
   }
 
-  let visted = [start.name]; // map
+  let visted = {};
+  visted[start.name] = 1;
   let optimaize_route = [start.name];
   let i = 1;
 
@@ -33,7 +34,7 @@ function delivery_route_optimization(buildings, start) {
     let maxDistance = Number.POSITIVE_INFINITY;
 
     for (const build in points[current]) {
-      if (!visted.includes(build)) {
+      if (!visted[build]) {
         if (points[current][build] < maxDistance) {
           maxDistance = points[current][build];
           nextBuild = build;
@@ -42,7 +43,7 @@ function delivery_route_optimization(buildings, start) {
     }
 
     current = nextBuild;
-    visted.push(nextBuild);
+    visted[nextBuild] = 1;
     optimaize_route.push(nextBuild);
 
     i++;
