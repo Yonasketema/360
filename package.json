@@ -1,0 +1,16 @@
+{
+  "name": "360",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Yonasketema/360.git",
+  "author": "yonasketema <yonask.kitaw@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watchAll --verbose"
+  },
+  "devDependencies":
+   {
+    "jest": "^29.4.3"
+  }
+   
+}
