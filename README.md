@@ -29,6 +29,7 @@ const buildings = [
 
 first, make a nice map with keys for each pair's distance and building name.
 
+```
 function delivery_route_optimization(buildings, start) {
 
 // create map of the buildings
@@ -37,16 +38,22 @@ for (const build of buildings) {
 //points with building name and distance of each pair
 points[build.name] = build.distance;
 }
+```
 
 the points become like this now it is easy to navigate each buildings
+
+```
 points = {
 A: { B: 20, C: 12, D: 3 },
 B: { A: 20, C: 3, D: 12 },
 C: { A: 12, B: 3, D: 7 },
 D: { A: 3, B: 12, C: 7 }
 }
+```
 
+```
 //store all visted buildings
+
 let visted = {};
 visted[start.name] = 1;
 //final route
@@ -81,3 +88,4 @@ let maxDistance = Number.POSITIVE_INFINITY;
 optimaize_route.push(start.name);
 return optimaize_route;
 }
+```
