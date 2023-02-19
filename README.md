@@ -9,16 +9,15 @@ The solution algortihm work by Choose the nearest city from a particular buildin
 ![Screenshot from 2023-02-19 15-28-35](https://user-images.githubusercontent.com/103140237/219948515-7ff6ea7e-9067-4445-9d9b-6b3940be0722.png)
 
 ### Complexity
-⋅⋅*Time complexity:
-⋅⋅⋅O(N)
 
-⋅⋅*Space complexity:
-⋅⋅⋅O(1)
+Time complexity: O(N)
 
+Space complexity: O(N)
 
 
 
-```
+
+```javascript
 const buildings = [
   {
     name: "A",
@@ -41,7 +40,7 @@ const buildings = [
 
 first, make a nice map with keys for each pair's distance and building name.
 
-```
+```javascript
 function delivery_route_optimization(buildings, start) {
 
 // create map of the buildings
@@ -62,8 +61,7 @@ C: { A: 12, B: 3, D: 7 },
 D: { A: 3, B: 12, C: 7 }
 }
 ```
-
-```
+```javascript
 //store all visted buildings
 
 let visted = {};
