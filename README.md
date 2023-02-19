@@ -9,10 +9,10 @@ The solution algortihm work by Choose the nearest city from a particular buildin
 ![Screenshot from 2023-02-19 15-28-35](https://user-images.githubusercontent.com/103140237/219948515-7ff6ea7e-9067-4445-9d9b-6b3940be0722.png)
 
 ### Complexity
-⋅⋅* Time complexity:
+⋅⋅*Time complexity:
 ⋅⋅⋅O(N)
 
-⋅⋅* Space complexity:
+⋅⋅*Space complexity:
 ⋅⋅⋅O(1)
 
 
